@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gcc debug",
+            "type": "cppvsdbg", // 如果用的是 VSCode 自带的 C/C++ 插件的 GDB 调试器，也可以用 "cppdbg"
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // 想弹出黑窗口运行就改成 true
+            "preLaunchTask": "gcc build",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
